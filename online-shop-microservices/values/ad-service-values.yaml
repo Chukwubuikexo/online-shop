@@ -1,0 +1,13 @@
+appName: adservice
+appImage: gcr.io/google-samples/microservices-demo/adservice
+appVersion: v0.10.1
+appReplicas: 0
+containerPort: 9555
+containerEnvVars: 
+- name: PORT
+  value: "9555"
+
+service:
+  port: 9555
+#this file and all other yaml file in this external values folder overide the default values
+# defined in the charts folder
